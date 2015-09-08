@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddEditViewController.h"
 
 @interface ViewDetailsController : UIViewController{
     

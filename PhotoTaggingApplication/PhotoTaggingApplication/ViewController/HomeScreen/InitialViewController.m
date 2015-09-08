@@ -98,9 +98,10 @@
 
 #pragma mark:-add button action handler
 - (IBAction)buttonAddActionHandler:(UIBarButtonItem *)sender {
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    ViewDetailsController *obj = [storyboard instantiateViewControllerWithIdentifier:@"ViewDetailsController"];
-//    [self.navigationController pushViewController:obj animated:true];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    AddEditViewController *addEditViewControllerObject = [storyboard instantiateViewControllerWithIdentifier:@"AddEditViewController"];
+    [self.navigationController pushViewController:addEditViewControllerObject animated:true];
     
 }
 

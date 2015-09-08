@@ -1,14 +1,10 @@
-//
-//  AddEditViewController.m
-//  PhotoTaggingApplication
-//
-//  Created by weboniselab1 on 08/09/2015.
-//  Copyright (c) 2015 weboniselab. All rights reserved.
-//
+
 
 #import "AddEditViewController.h"
 
-@interface AddEditViewController ()
+@interface AddEditViewController (){
+    UIBarButtonItem *barButtonSave,*barButtonCancel;
+}
 
 @end
 
@@ -16,22 +12,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initialiseCancelBarButton];
+    [self initialiseSaveBarRightButton];
+  
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   }
+
+#pragma mark:-adding save bar button
+-(void)initialiseSaveBarRightButton{
+    barButtonSave = [[UIBarButtonItem alloc]initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(barButtonSaveActionHandler)];
+    self.navigationItem.rightBarButtonItem = barButtonSave;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark:-adding cancel button
+-(void)initialiseCancelBarButton{
+   
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    barButtonCancel = [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(barButtonCancelActionHandler)];
+    self.navigationItem.leftBarButtonItem = barButtonCancel;
 }
-*/
 
+#pragma mark:-barbutton save action handler
+-(void)barButtonSaveActionHandler{
+    
+}
+
+#pragma  mark:- barbutton cancel action handler
+-(void)barButtonCancelActionHandler{
+    
+    [self.navigationController popToRootViewControllerAnimated:true];
+}
 @end
