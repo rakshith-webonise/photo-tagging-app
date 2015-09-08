@@ -17,6 +17,8 @@
 		846989F31B9DC68D004A76B2 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846989F21B9DC68D004A76B2 /* InitialViewController.m */; };
 		846989F71B9DC6F4004A76B2 /* CustomisedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 846989F51B9DC6F4004A76B2 /* CustomisedTableViewCell.m */; };
 		846989F81B9DC6F4004A76B2 /* CustomisedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846989F61B9DC6F4004A76B2 /* CustomisedTableViewCell.xib */; };
+		84D558EE1B9E990B00FBABEE /* ViewDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D558ED1B9E990B00FBABEE /* ViewDetailsController.m */; };
+		84D558F21B9EC84B00FBABEE /* AddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D558F11B9EC84B00FBABEE /* AddEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		846989F41B9DC6F4004A76B2 /* CustomisedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomisedTableViewCell.h; path = PhotoTaggingApplication/ViewController/HomeScreen/CustomisedTableViewCell.h; sourceTree = "<group>"; };
 		846989F51B9DC6F4004A76B2 /* CustomisedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomisedTableViewCell.m; path = PhotoTaggingApplication/ViewController/HomeScreen/CustomisedTableViewCell.m; sourceTree = "<group>"; };
 		846989F61B9DC6F4004A76B2 /* CustomisedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomisedTableViewCell.xib; path = PhotoTaggingApplication/ViewController/HomeScreen/CustomisedTableViewCell.xib; sourceTree = "<group>"; };
+		84D558EC1B9E990B00FBABEE /* ViewDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewDetailsController.h; path = PhotoTaggingApplication/ViewController/ViewDetailsScreen/ViewDetailsController.h; sourceTree = "<group>"; };
+		84D558ED1B9E990B00FBABEE /* ViewDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewDetailsController.m; path = PhotoTaggingApplication/ViewController/ViewDetailsScreen/ViewDetailsController.m; sourceTree = "<group>"; };
+		84D558F01B9EC84B00FBABEE /* AddEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddEditViewController.h; path = PhotoTaggingApplication/ViewController/AddEditViewController/AddEditViewController.h; sourceTree = "<group>"; };
+		84D558F11B9EC84B00FBABEE /* AddEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddEditViewController.m; path = PhotoTaggingApplication/ViewController/AddEditViewController/AddEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 		846989C01B9DB094004A76B2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84D558EF1B9EC80700FBABEE /* AddEditViewController */,
+				84D558EB1B9E98A800FBABEE /* ViewDetailsScreen */,
 				846989F01B9DC63D004A76B2 /* HomeScreen */,
 			);
 			name = ViewController;
@@ -167,6 +175,24 @@
 				846989F61B9DC6F4004A76B2 /* CustomisedTableViewCell.xib */,
 			);
 			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		84D558EB1B9E98A800FBABEE /* ViewDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84D558EC1B9E990B00FBABEE /* ViewDetailsController.h */,
+				84D558ED1B9E990B00FBABEE /* ViewDetailsController.m */,
+			);
+			name = ViewDetailsScreen;
+			sourceTree = "<group>";
+		};
+		84D558EF1B9EC80700FBABEE /* AddEditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84D558F01B9EC84B00FBABEE /* AddEditViewController.h */,
+				84D558F11B9EC84B00FBABEE /* AddEditViewController.m */,
+			);
+			name = AddEditViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +299,10 @@
 				846989E31B9DB677004A76B2 /* main.m in Sources */,
 				846989F71B9DC6F4004A76B2 /* CustomisedTableViewCell.m in Sources */,
 				846989DB1B9DB666004A76B2 /* AppDelegate.m in Sources */,
+				84D558F21B9EC84B00FBABEE /* AddEditViewController.m in Sources */,
 				846989E41B9DB677004A76B2 /* PhotoTaggingApplication.xcdatamodeld in Sources */,
 				846989F31B9DC68D004A76B2 /* InitialViewController.m in Sources */,
+				84D558EE1B9E990B00FBABEE /* ViewDetailsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +497,7 @@
 				846989BB1B9DAE8F004A76B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		846989BC1B9DAE8F004A76B2 /* Build configuration list for PBXNativeTarget "PhotoTaggingApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +506,7 @@
 				846989BE1B9DAE8F004A76B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

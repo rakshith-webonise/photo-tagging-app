@@ -57,12 +57,16 @@
     if (cell == nil) {
        [tableView registerNib:[UINib nibWithNibName:@"CustomisedTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
     }
     
    cell.labelTitle.text=@"rakshith";
     
    cell.labelTag.text = @"9740561646";
-    
+    //for adding bottom border
+    UIView *bottomLineView = [[UIView alloc] initWithFrame:CGRectMake(0, cell.bounds.size.height, self.view.bounds.size.width, 2)];
+    bottomLineView.backgroundColor = [UIColor grayColor];
+    [cell.contentView addSubview:bottomLineView];
    
     return cell;
     
@@ -90,5 +94,15 @@
     
     [self presentViewController:alertForNoResults animated:YES completion:nil];
 }
+
+
+#pragma mark:-add button action handler
+- (IBAction)buttonAddActionHandler:(UIBarButtonItem *)sender {
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    ViewDetailsController *obj = [storyboard instantiateViewControllerWithIdentifier:@"ViewDetailsController"];
+//    [self.navigationController pushViewController:obj animated:true];
+    
+}
+
 
 @end
